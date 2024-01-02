@@ -5,8 +5,35 @@ class Person extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('This is Person Page'),
+    return Center(
+      child: Scaffold(
+        body: SafeArea(
+          child: Column(
+            children: [
+              Container(
+                color: Colors.red,
+                height: 100,
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Container(
+                color: Colors.green,
+                height: 100,
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              SizedBox(
+                height: 300,
+                child: Container(
+                  color: Colors.amber,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
