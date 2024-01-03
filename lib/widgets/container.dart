@@ -12,18 +12,18 @@ class ContainerWidget extends StatelessWidget {
           margin: const EdgeInsets.all(10),
           height: 200,
           width: 200,
+          alignment: Alignment.bottomCenter,
           // color: Colors.red,
           transform: Matrix4.rotationZ(.2),
           decoration: BoxDecoration(
             color: Colors.red,
             shape: BoxShape.rectangle,
             borderRadius: BorderRadius.circular(10),
+            border: Border.all(color: Colors.black, width: 5),
           ),
-          child: const Center(
-            child: Text(
-              'Hello World',
-              style: TextStyle(color: Colors.white, fontSize: 20),
-            ),
+          child: const Text(
+            'Hello World',
+            style: TextStyle(color: Colors.white, fontSize: 20),
           ),
         ),
       ),
