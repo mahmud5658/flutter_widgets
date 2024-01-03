@@ -47,15 +47,15 @@ class HomeActivity extends StatelessWidget {
               ),
             ),
           ],
-          leading: IconButton(
-            onPressed: () {
-              snackBar('I am menu button', context);
-            },
-            icon: const Icon(
-              Icons.menu,
-              color: Colors.white,
-            ),
-          ),
+          // leading: IconButton(
+          //   onPressed: () {
+          //     snackBar('I am menu button', context);
+          //   },
+          //   icon: const Icon(
+          //     Icons.menu,
+          //     color: Colors.white,
+          //   ),
+          // ),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
@@ -98,6 +98,112 @@ class HomeActivity extends StatelessWidget {
             }
           },
           backgroundColor: Colors.amber,
+        ),
+        drawer: Drawer(
+          child: ListView(
+            children: [
+              DrawerHeader(
+                padding: const EdgeInsets.all(0),
+                child: UserAccountsDrawerHeader(
+                  decoration: const BoxDecoration(
+                    color: Colors.amber,
+                  ),
+                  accountName: const Text('Abdullah Al Mahmud'),
+                  accountEmail: const Text('Info@abdullah.com'),
+                  currentAccountPicture: Image.network(
+                      'https://icons8.com/icon/7I3BjCqe9rjG/flutter'),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  snackBar('Home', context);
+                },
+                leading: const Icon(Icons.home),
+                title: const Text('Home'),
+              ),
+              ListTile(
+                leading: const Icon(Icons.contact_mail),
+                title: const Text('Contact'),
+                onTap: () {
+                  snackBar('Contact', context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.person),
+                title: const Text('Profile'),
+                onTap: () {
+                  snackBar('Profile', context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.email),
+                title: const Text('Email'),
+                onTap: () {
+                  snackBar('Email', context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.phone),
+                title: const Text('Phone'),
+                onTap: () {
+                  snackBar('Phone', context);
+                },
+              ),
+            ],
+          ),
+        ),
+        endDrawer: Drawer(
+          child: ListView(
+            children: [
+              DrawerHeader(
+                padding: const EdgeInsets.all(0),
+                child: UserAccountsDrawerHeader(
+                  decoration: const BoxDecoration(
+                    color: Colors.amber,
+                  ),
+                  accountName: const Text('Abdullah Al Mahmud'),
+                  accountEmail: const Text('Info@abdullah.com'),
+                  currentAccountPicture: Image.network(
+                      'https://icons8.com/icon/7I3BjCqe9rjG/flutter'),
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  snackBar('Home', context);
+                },
+                leading: const Icon(Icons.home),
+                title: const Text('Home'),
+              ),
+              ListTile(
+                leading: const Icon(Icons.contact_mail),
+                title: const Text('Contact'),
+                onTap: () {
+                  snackBar('Contact', context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.person),
+                title: const Text('Profile'),
+                onTap: () {
+                  snackBar('Profile', context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.email),
+                title: const Text('Email'),
+                onTap: () {
+                  snackBar('Email', context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.phone),
+                title: const Text('Phone'),
+                onTap: () {
+                  snackBar('Phone', context);
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );
