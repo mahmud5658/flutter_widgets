@@ -7,36 +7,51 @@ class RowWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(
-          color: Colors.blue,
-          height: 300,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Container(
-                height: 50,
-                width: 50,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          // mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              height: 50,
+              width: 100,
+              decoration: BoxDecoration(
                 color: Colors.red,
+                borderRadius: BorderRadius.circular(10),
               ),
-              Container(
-                height: 50,
-                width: 50,
+              alignment: Alignment.center,
+              child: const Text(
+                'Flutter',
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+            Container(
+              height: 50,
+              width: 100,
+              decoration: BoxDecoration(
                 color: Colors.amber,
+                borderRadius: BorderRadius.circular(10),
               ),
-              Container(
-                height: 50,
-                width: 50,
+              alignment: Alignment.center,
+              child: const Text(
+                'Java',
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+            Container(
+              height: 50,
+              width: 100,
+              decoration: BoxDecoration(
                 color: Colors.green,
+                borderRadius: BorderRadius.circular(10),
               ),
-              Container(
-                height: 50,
-                width: 50,
-                color: Colors.black,
+              alignment: Alignment.center,
+              child: const Text(
+                'Kotlin',
+                style: TextStyle(color: Colors.white),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
