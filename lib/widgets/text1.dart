@@ -10,8 +10,8 @@ class TextWidgetView extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: const Text(
-          'Text Widget View',
-          style: TextStyle(color: Colors.white, fontSize: 20),
+          'Text Widget',
+          style: TextStyle(color: Colors.white, fontSize: 30),
         ),
       ),
       body: Column(
@@ -39,6 +39,7 @@ class TextWidgetView extends StatelessWidget {
             child: Container(
               margin: const EdgeInsets.all(30),
               child: RichText(
+                // textDirection: TextDirection.ltr,
                 text: TextSpan(
                   text: 'Don\'t have an account',
                   style: const TextStyle(color: Colors.black, fontSize: 20),
