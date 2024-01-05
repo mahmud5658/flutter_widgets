@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget/widgets/text.dart';
+import 'package:flutter_widget/widgets/text1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.green),
-      darkTheme: ThemeData(primarySwatch: Colors.amber),
-      color: Colors.blue,
-      home: const TextWidget(),
-    );
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        // darkTheme: ThemeData(primarySwatch: Colors.amber),
+        home: const TextWidgetView());
   }
 }
