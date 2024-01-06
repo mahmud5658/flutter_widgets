@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget/widgets/listtile.dart';
+import 'package:flutter_widget/widgets/gridview.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // darkTheme: ThemeData(primarySwatch: Colors.amber),
-      home: const ListTileWidget(),
+      home: const GridViewWidget(),
     );
   }
 }
