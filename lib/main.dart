@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget/widgets/sizedbox.dart';
+import 'package:flutter_widget/widgets/scaffold.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // darkTheme: ThemeData(primarySwatch: Colors.amber),
-      home: const SizedBoxWidget(),
+      home: const ScaffoldWidget(),
     );
   }
 }
