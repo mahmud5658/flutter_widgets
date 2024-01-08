@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget/widgets/layoutbuilder1.dart';
-
+import 'package:flutter_widget/widgets/fittedbox.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // darkTheme: ThemeData(primarySwatch: Colors.amber),
-      home: const LayoutBuilderWidget(),
+      home: const FittedBoxWidget(),
     );
   }
 }
