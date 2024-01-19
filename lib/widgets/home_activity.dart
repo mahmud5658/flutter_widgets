@@ -206,19 +206,7 @@ class HomeActivity extends StatelessWidget {
           ),
         ),
         body: Center(
-          child: Container(
-            height: 250,
-            width: 250,
-            decoration: BoxDecoration(
-              color: Colors.red,
-              border: Border.all(color: Colors.black, width: 6),
-            ),
-            alignment: Alignment.topCenter,
-            child: const Text(
-              'Abdullah',
-              style: TextStyle(color: Colors.white, fontSize: 20),
-            ),
-          ),
+          child: Image.network("https://img.freepik.com/free-photo/shallow-focus-vertical-shot-cute-golden-retriever-puppy-sitting-grass-ground_181624-27259.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705622400&semt=sph",height: 300,width: 300,),
         ),
       ),
     );
