@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class RowContainer extends StatelessWidget {
-  const RowContainer({super.key});
+class ButtonWidget extends StatelessWidget {
+  const ButtonWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
