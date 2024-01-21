@@ -10,6 +10,27 @@ class BottomNavigation extends StatefulWidget {
 class _BottomNavigationState extends State<BottomNavigation> {
   int selectedIndex = 0;
 
+  final List<Widget> _views = <Widget>[
+    const Center(
+      child: Text(
+        "Home is selected",
+        style: TextStyle(color: Colors.red,fontSize: 20),
+      ),
+    ),
+    const Center(
+      child: Text(
+        "Chat is selected",
+        style: TextStyle(color: Colors.blue, fontSize: 20),
+      ),
+    ),
+    const Center(
+      child: Text(
+        "Notifications is selected",
+        style: TextStyle(color: Colors.amber, fontSize: 20),
+      ),
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,6 +41,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
           style: TextStyle(color: Colors.white),
         ),
       ),
+      body: _views.elementAt(selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
