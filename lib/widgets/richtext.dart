@@ -16,6 +16,7 @@ class RichTextWidget extends StatelessWidget {
         ),
         body: SafeArea(
           child: RichText(
+            textDirection: TextDirection.rtl,
             text: const TextSpan(
                 text: "Flutter",
                 style: TextStyle(
