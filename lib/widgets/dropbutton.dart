@@ -25,9 +25,12 @@ class _DropDownButtonWidgetState extends State<DropDownButtonWidget> {
             dropdownColor: Colors.blue,
             isExpanded: true,
             value: selectedValue,
+            padding: const EdgeInsets.all(20),
+            borderRadius: BorderRadius.circular(20),
+            isDense: true,
             hint: const Text(
               "Select the city",
-              style: TextStyle(color: Colors.black, fontSize: 15),
+              style: TextStyle(color: Colors.black, fontSize: 20),
             ),
             style: const TextStyle(color: Colors.black, fontSize: 15),
             icon: const Icon(Icons.keyboard_arrow_down),
